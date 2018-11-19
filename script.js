@@ -50,7 +50,6 @@ shooter.end = () =>
 shooter.tick = () =>
 {
     shooter.secondsLeft --
-    console.log(shooter.secondsLeft)
 
     if(shooter.secondsLeft === 0)
     {
