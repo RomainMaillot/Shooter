@@ -33,6 +33,7 @@
     color: #ffffff;
     text-transform: uppercase;
     opacity: 0.15;
+    display: none;
 }
 
 .shooter .score .value
@@ -55,6 +56,7 @@
     color: #ffffff;
     text-transform: uppercase;
     opacity: 0.15;
+    display: none;
 }
 
 .shooter .targets
@@ -64,6 +66,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 .shooter .targets .target
@@ -104,4 +107,19 @@
     transform: translate(-50%, -50%);
     background-color: #dddddd;
     border-radius: 50%;
+}
+
+.shooter.step-start .start, 
+.shooter.step-game .score, 
+.shooter.step-game .timer, 
+.shooter.step-game .targets, 
+.shooter.step-end .start, 
+.shooter.step-end .score
+{
+    display: block;
+}
+
+.shooter.step-end .score
+{
+    top: 25%;
 }
